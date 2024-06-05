@@ -1,0 +1,55 @@
+/* styles/RecentActivity.css */
+.recent-activity {
+  padding: 1em;
+  background-color: #f9f9f9;
+}
+
+.activity-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.graph-section {
+  flex: 1;
+  min-width: 300px; /* Ensures minimum width for the graph section */
+}
+
+.selection-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 300px; /* Ensures minimum width for the selection section */
+}
+
+.time-period {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.time-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.time-buttons {
+  display: flex;
+  gap: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .activity-content {
+    flex-direction: row;
+    justify-content: space-between; /* Distributes space evenly */
+  }
+  
+  .selection-section {
+    flex: 1;
+  }
+}
+
